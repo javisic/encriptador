@@ -1,20 +1,17 @@
-body{
+*{
     background: #F3F5FC;
-}
-
-.principal{
-    position: relative;
-    width: 1440px;
-    height: 880px;
-    margin: 0 auto;
+    font-size: 'Montserrat';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
 }
 
 .logo{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
+    padding-top: 40px;
+    margin-left: 40px;
 
     position: absolute;
     width: 120px;
@@ -23,26 +20,26 @@ body{
     top: 30px;
 }
 
-.txtMensaje{
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.mensaje{
     position: absolute;
     width: 577px;
     height: 48px;
     left: 240px;
     top: 150px;
-}
-
-.txtMensaje textarea{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
     border: none;
+    text-transform: lowercase;
     outline: none;
+    color: #0A3871;
     background-color: #F3F5FC;
 }
 
-.txtMensaje textarea::placeholder{
+::placeholder{
     color: #0A3871;
 }
 
@@ -68,9 +65,9 @@ body{
 }
 
 .advertencia p{
-    width: 205px;
+    width: 230px;
     height: 18px;
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -96,16 +93,13 @@ body{
 }
 
 .encriptar{
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    color: #FFFFFF;
     padding: 24px;
     gap: 8px;
     width: 328px;
@@ -118,10 +112,14 @@ body{
 }
 
 .desencriptar{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
     gap: 8px;
     width: 328px;
@@ -134,7 +132,7 @@ body{
     flex-grow: 0;
 }
 
-.resultado{
+.caja-resultado{
     position: absolute;
     width: 400px;
     height: 826px;
@@ -145,14 +143,13 @@ body{
     border-radius: 32px;
 }
 
-.muneco{
-    position: absolute;
-    width: 336px;
-    height: 304px;
-    left: 35px;
-    top: 150px;
+.resultado{
+    background: #FFFFFF;
+    background-image: url("imagenes/Muneco.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-position: center;
 }
-
 
 .txtResultado{
     display: flex;
@@ -165,13 +162,14 @@ body{
     height: 122px;
     left: 35px;
     top: 510px;
+    background: #FFFFFF;
 }
 
 .txtResultado h2{
     width: 336px;
     height: 58px;
 
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -185,13 +183,14 @@ body{
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    background: #FFFFFF;
 }
 
 .txtResultado p{
     width: 336px;
     height: 48px;
 
-    font-family: 'Inter';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -205,10 +204,31 @@ body{
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+    background: #FFFFFF;
+}
+
+.copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
 }
 
 footer{
     padding: 20px;
     color: #F3F5FC;
     background-color: #0A3871;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.miNombre{
+    color: #FA8072;
+    font-weight: 700;
 }
